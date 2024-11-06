@@ -62,9 +62,43 @@
   height: 18vh;
 }
 
+/* on small screens, don't have small areas for text like 4-10 */
+
 /* Tablet Styles*/
 
+/* keep media queries at bottom */
 
+/* use media queries to change how a website looks on different sized screens */
+
+/* always use relative measurements for changing size like % not px */
+
+@media screen and (min-width: 520px) and (max-width: 1024px) {
+  .flex-container {
+    height: fit-content;
+  }
+
+  .quarter {
+    width: 48%;
+  }
+
+  .third {
+    width: 48%;
+  }
+
+  .third:last-child {
+    width: 97%;
+    /* flex-grow: 1; */
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .half,
+  .third,
+  .quarter {
+    width: 97%;
+  }
+}
 
 
 /* Mobile Styles*/
